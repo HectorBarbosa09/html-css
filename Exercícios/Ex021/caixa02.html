@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+    body{
+        background-color: gray;
+    }
+    header{
+        background-color: white;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px 0px;
+    }
+    h1{
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    nav{
+        background-color: #747e7e73;
+        text-align: center;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.486);
+        border-radius: 10px;
+    }
+    nav > a{
+        text-decoration: none;
+        color: black;
+    }
+    a:hover{
+        color: red;
+        text-decoration: underline;
+    }
+    main{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    } 
+    h2{
+    font-family: Verdana, Tahoma, sans-serif
+    }
+    section#assuntos{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    }
+    aside{
+    background-color: #747e7e73;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    }
+    p.citacao{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 10px;
+    }
+    article{
+    background-color: rgba(128, 128, 128, 0.26);
+    padding: 10px;
+    border-radius: 10px;
+    }
+    footer{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 5px;
+    margin: 0px ;
+    }
+    footer > p {
+    margin: 0px ;
+    }
+    img{
+        border-radius: 50%;
+        text-align: ce;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+     <section id="assuntos">
+            <p class="assuntos">Esportes, política e tecnologia</p>
+     </section>
+     <section id="noticias">
+        <article>
+            <h2>Notícias sobre o Brasil</h2>
+            <p class="citacao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero laboriosam expedita nihil saepe. Voluptatem nobis alias laboriosam eaque, sed fugiat, reprehenderit, corporis voluptates assumenda sunt exercitationem cumque iste ab quas? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, adipisci. Cupiditate at debitis minima illo, cumque, officia molestias repellat maxime aliquid in reiciendis nobis nulla voluptatibus atque quidem ratione quasi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptas excepturi sapiente, facilis commodi beatae tempore aspernatur necessitatibus aliquid. Cupiditate quia expedita vero voluptatum dignissimos, ut recusandae pariatur a vitae?</p>
+            <aside>
+                <p>Artigo escrito por José Boto</p>
+            </aside>
+     </section>
+        </article>
+    </main>
+    <footer>
+        <p>Desenvolvido por Hector Barbosa</p>
+    </footer>
+    <img src="hector.desafio005.jpg" alt="image/jpg">
+</body>
+</html>

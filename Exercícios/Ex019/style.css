@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body{
+    background-color: seashell;
+}
+
+h1{
+    color: chocolate;
+}
+h2{
+    color: crimson;
+}
+h1#principal{
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+.basico{
+    color: darkmagenta;
+}
+.intermediario{
+    color: yellow;
+}
+.avancado{
+    color: violet;
+}
+.destaque{
+    background-color: blue;
+    text-align: center;
+}
