@@ -1,46 +1,95 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 :root{
-    --fonte-destaque:'Bebas Neue';
-    --fonte-corpo: cursive;
+    
+  --fonte1: Verdana, Geneva, Tahoma, Sans-serif;
+  --fonte2: "Passion One", sans-serif;
+  --fonte3: "Sriracha", cursive;
+
 }
 *{
     margin: 0px;
     padding: 0px;
 }
+
+html, body{
+    background-color: darkgray;
+    min-height: 100vh;
+}
+
 header{
     background-color: black;
-    padding: 100px 10px;
-}
-
-header h1{
     color: white;
     text-align: center;
-    font-family: var(--fonte-destaque);
-    font-size: 80px;
 }
 
-header p{
-   color: white;
-   text-align: center;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
+header > h1{
+    padding-top: 50px;
+    font-family: var(--fonte2);
+    font-variant: small-caps;
+    font-size: 4vw;
 }
 
-header a{
-   color: white;
+header > p{
+   padding-bottom: 50px;
+   font-size: 1.5vw;
+}
+
+a{
    text-decoration: none;
+   color: white;
+   font-weight: bolder;
 }
 
-header a:hover{
+a:hover{
     text-decoration: underline;
 }
 
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 2.5vw;
+}
+
+section > p{
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgba(78, 78, 78, 0.26);
+    color: white;
+    background-position: right center;
+    box-shadow: inset 6px 6px 10px 0px rgba(0, 0, 0, 0.575);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#img01{
+    background-image: url(../imagens/background001.jpg);
+}
+
+#img02{
+    background-image: url(../imagens/background002.jpg);
+}
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.514);
+    display: inline-block;
+    padding: 8px;
+    text-shadow: 1px 1px 0px black;
+}
 
 footer{
     background-color: black;
@@ -62,4 +111,3 @@ footer a{
 footer a:hover{
     text-decoration: underline;
 }
-
